@@ -16,9 +16,7 @@ class Array:
             self.value = self.value[:index] + self.value[index +1:]
             return item
     
-    def insert(self, index, item):
-        if index < 0:
-            index = 0
+    def insert(self, index, item):       
         if index > len(self.value):
             index = len(self.value)
         self.value = self.value[:index] + [item] + self.value[index:]          
